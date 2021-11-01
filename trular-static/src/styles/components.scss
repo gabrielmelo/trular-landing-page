@@ -1,0 +1,112 @@
+/*
+* Components
+*/
+
+// Hero
+.hero {
+  @apply bg-gray-100 text-center flex items-center justify-center relative overflow-hidden;
+  scroll-snap-align: start;
+
+  &__container {
+    @apply relative max-w-sm;
+  }
+
+  &__content {
+    @apply flex items-center flex-col;
+  }
+
+  &__heading {
+    @apply text-5xl text-center font-normal;
+
+    @screen lg {
+      @apply text-7xl;
+      max-width: 800px;
+    }
+  }
+
+  &__excerpt {
+    @apply text-center mt-4;
+    max-width: 400px;
+  }
+
+  &::after {
+    content: ' ';
+    display: block;
+    border-radius: 100%;
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+
+    transform: translateX(50%) translateY(50%);
+
+    height: 800px;
+    width: 800px;
+
+    opacity: 0.4;
+    background: rgb(0, 114, 211);
+    background: radial-gradient(
+      circle,
+      rgba(0, 114, 211, 1) 0%,
+      rgba(0, 114, 211, 0) 60%
+    );
+  }
+
+  &::before {
+    content: ' ';
+    display: block;
+    border-radius: 100%;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+
+    transform: translateX(-50%) translateY(50%);
+
+    height: 800px;
+    width: 800px;
+
+    opacity: 0.4;
+    background: rgb(255, 77, 38);
+    background: radial-gradient(
+      circle,
+      rgba(255, 77, 38, 1) 0%,
+      rgba(255, 77, 38, 0) 60%
+    );
+  }
+}
+
+// Navigation
+.navigation {
+  @apply px-10 max-w-4xl;
+
+  @screen md {
+    @apply text-base text-gray-900 justify-between items-center;
+  }
+}
+
+// Buttons
+.buttons {
+  @apply flex gap-4;
+}
+
+button,
+.button,
+a.button {
+  @apply font-bold text-center py-2 px-6 bg-red-500;
+  font-family: 'Open Sans', sans-serif;
+
+  &--primary {
+    @apply text-white text-sm leading-normal rounded h-10 md:text-base;
+  }
+
+  transition: filter 300ms ease-in-out;
+
+  &:hover {
+    filter: brightness(0.9);
+  }
+}
+
+// Block
+.block {
+  @apply h-screen;
+  scroll-snap-align: start;
+}

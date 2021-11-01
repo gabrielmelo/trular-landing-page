@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <title>trular</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Metas -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="trular - dados imobiliários confiáveis em um só lugar">
+
+  <!-- Favicons -->
+  <!-- TODO: favicon dark mode -->
+  <link rel="shortcut icon" href="/favicon.svg" type="image/svg+xml">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="./src/styles/global.scss">
+  <link rel="stylesheet" href="./src/styles/layout.scss">
+  <link rel="stylesheet" href="./src/styles/components.scss">
+
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Google Tag Manager -->
+  <!-- <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'XXX-XXXXXXX');</script> -->
+  <!-- End Google Tag Manager -->
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <!-- <noscript>
+    <iframe src=“https://www.googletagmanager.com/ns.html?id=GTM-PQKCCN5” height=“0" width=“0”
+            style=“display:none;visibility:hidden”>
+    </iframe>
+  </noscript> -->
+  <!-- End Google Tag Manager (noscript) -->
+
+  <header class="l-header">
+    <div class="l-header__container">
+      <div id="navigationBrand">
+        <a href="/">
+          <img src="/src/assets/logo.svg" alt="trular">
+        </a>
+        <h1 class="sr-only">trular</h1>
+      </div>
+
+      <div class="signin-button">
+        <button type="button" id="signButton" class="button button--primary">Login</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="l-main-content" role="main" id="mainContent">
+    <!-- hero -->
+    <section class="hero h-screen" role="banner" id="o-que-fazemos">
+      <div class="container mx-auto px-4">
+        <div class="hero__content">
+          <h1 class="hero__heading">Dados imobiliários confiáveis num só lugar</h1>
+          <p class="hero__excerpt">Trular é a primeira plataforma com informações completas e confiáveis sobre prédios e
+            corretores.</p>
+
+          <div class="buttons flex-col mt-8">
+            <button type="button" class="button button--primary bg-accent">Peça seu código de
+              acesso</button>
+            <!-- <a href="#" class="text-accent">Já tenho um código</a> -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end hero -->
+
+    <!-- Section one -->
+    <section class="block h-screen">
+      <div class="container mx-auto px-4">
+        <div class="block__content">
+          <h1>Catálogo de prédios</h1>
+          <p>Encontre informações de todos os prédios residenciais da região central de São Paulo no nosso catálogo.</p>
+
+          <div class="images">
+            <!-- <img src="/static/images/section-1.png" alt="Section 1 alt"> -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end section one -->
+
+    <!-- Section two -->
+    <section class="block h-screen" id="corretores">
+      <div class="container mx-auto px-4">
+        <div class="block__content">
+          <h1>Detalhes sobre cada imóvel</h1>
+          <p>Acesse dados validados sobre o tipo e número de unidades em cada prédio, assim como também o preço final de
+            venda de transações recentes.</p>
+
+          <div class="images">
+            <!-- <img src="/static/images/section-2.png" alt="Section 2 alt"> -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End section two -->
+
+    <!-- Section three -->
+    <section class="block h-screen" id="predios">
+      <div class="container mx-auto px-4">
+        <div class="block__content">
+          <h1>Catálogo de corretores</h1>
+
+          <div class="mt-4">
+            <p>Compare diferentes corretores, veja a sua área de atuação e em quais prédios eles já venderam
+              apartamentos.
+              Encontre o corretor com a experiência certa para vender o seu apartamento.</p>
+
+            <p>
+              Aumentando a transparência a Trular vai transformar o mercado imobiliário brasileiro.
+            </p>
+
+            <!-- Call to action -->
+            <div class="mt-4">
+              <h2>Você é um corretor de imóveis ou agência?</h2>
+              <button type="button" role="button"
+                      class="button button--primary">Venha fazer parte</button>
+            </div>
+            <!-- End call to action -->
+          </div>
+
+          <div class="images">
+            <!-- <img src="/static/images/section-2.png" alt="Section 2 alt"> -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End section three -->
+
+    <!-- Section four -->
+    <section class="block h-screen" id="nossa-visao">
+      <div class="container mx-auto px-4">
+        <div class="block__content">
+          <h1>Democratizamos os dados do mercado imobiliário</h1>
+
+          <div class="mt-4">
+            <p>Você está pensando em comprar ou vender um apartamento? Qual é o preço que você acha apropriado? Como
+              você
+              vai escolher um corretor para te ajudar? A Trular está aqui para te dar informações imobiliárias
+              relevantes
+              e te ajudar a tomar a melhor decisão.
+            </p>
+
+            <p>
+              Aumentando a transparência a Trular vai transformar o mercado imobiliário brasileiro.
+            </p>
+
+            <!-- Call to action -->
+            <div class="mt-4">
+              <h2>Aumentando a transparência a Trular vai transformar o mercado imobiliário brasileiro.</h2>
+            </div>
+            <!-- End call to action -->
+          </div>
+
+          <div class="images">
+            <!-- <img src="/static/images/section-2.png" alt="Section 2 alt"> -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End section four -->
+
+  </main>
+
+  <footer class="l-footer" id="footer">
+    <div class="l-footer__container">
+      <div class="l-footer__content">
+        <div class="signature">
+          <!-- <img src="/static/logo.svg" alt="trular"> -->
+          <span>Dados imobiliários confiáveis em um só lugar.</span>
+        </div>
+
+        <div class="more-information">
+          <span>CNPJ 40.409.082/0001-47</span>
+
+          <address>
+            Av. Brigadeiro Faria Lima 2369 cj 1102, 01452-922, São Paulo, SP, Brasil
+
+            <a href="mailto:info@trular.com.br">info@trular.com.br</a>
+          </address>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+  <script type="module" defer src="src/scripts/index.js"></script>
+</body>
+
+</html>

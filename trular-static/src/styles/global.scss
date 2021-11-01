@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --headerHeight: 80px;
+  --color-accent: '#0072D3';
+}
+
+// html {
+//   font-size: 87.5%;
+
+//   @screen md {
+//     font-size: 93.75%;
+//   }
+
+//   @screen lg {
+//     font-size: 100%;
+//   }
+// }
+
+body {
+  // overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+body,
+input,
+textarea {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+}
+
+button {
+  cursor: pointer;
+}
+
+[disabled] {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
