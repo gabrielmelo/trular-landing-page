@@ -4,19 +4,23 @@
 
 // Hero
 .hero {
-  @apply bg-gray-100 text-center flex items-center justify-center relative overflow-hidden;
-  scroll-snap-align: start;
+  @apply text-center flex items-center justify-center relative;
+  background: url('../assets/images/hero-bg.png') no-repeat fixed bottom center;
+  background-size: cover;
 
-  &__container {
-    @apply relative max-w-sm;
+  @screen md {
+    background: url('../assets/images/hero-desktop-bg.png') no-repeat fixed
+      bottom center;
+    background-size: cover;
   }
 
   &__content {
-    @apply flex items-center flex-col;
+    @apply relative flex items-center flex-col pt-12;
   }
 
   &__heading {
-    @apply text-5xl text-center font-normal;
+    @apply text-5xl text-center leading-tight;
+    font-family: 'Platform';
 
     @screen lg {
       @apply text-7xl;
@@ -26,51 +30,12 @@
 
   &__excerpt {
     @apply text-center mt-4;
-    max-width: 400px;
-  }
+    color: #4d5257;
+    max-width: 277px;
 
-  &::after {
-    content: ' ';
-    display: block;
-    border-radius: 100%;
-    position: absolute;
-    bottom: 0%;
-    right: 0%;
-
-    transform: translateX(50%) translateY(50%);
-
-    height: 800px;
-    width: 800px;
-
-    opacity: 0.4;
-    background: rgb(0, 114, 211);
-    background: radial-gradient(
-      circle,
-      rgba(0, 114, 211, 1) 0%,
-      rgba(0, 114, 211, 0) 60%
-    );
-  }
-
-  &::before {
-    content: ' ';
-    display: block;
-    border-radius: 100%;
-    position: absolute;
-    bottom: 0%;
-    left: 0%;
-
-    transform: translateX(-50%) translateY(50%);
-
-    height: 800px;
-    width: 800px;
-
-    opacity: 0.4;
-    background: rgb(255, 77, 38);
-    background: radial-gradient(
-      circle,
-      rgba(255, 77, 38, 1) 0%,
-      rgba(255, 77, 38, 0) 60%
-    );
+    @screen lg {
+      max-width: 400px;
+    }
   }
 }
 
@@ -85,23 +50,27 @@
 
 // Buttons
 .buttons {
-  @apply flex gap-4;
+  @apply flex space-y-2 md:space-y-4;
 }
 
 button,
 .button,
 a.button {
-  @apply font-bold text-center py-2 px-6 bg-red-500;
+  @apply font-bold text-center text-sm py-2 px-6 rounded h-10 leading-normal md:text-base;
   font-family: 'Open Sans', sans-serif;
-
-  &--primary {
-    @apply text-white text-sm leading-normal rounded h-10 md:text-base;
-  }
 
   transition: filter 300ms ease-in-out;
 
   &:hover {
     filter: brightness(0.9);
+  }
+
+  &--primary {
+    @apply text-white bg-red-500;
+  }
+
+  &--secondary {
+    @apply text-red-500;
   }
 }
 
@@ -109,4 +78,20 @@ a.button {
 .block {
   @apply h-screen;
   scroll-snap-align: start;
+}
+
+#illustration1 {
+  @apply absolute -left-10 top-20 w-24 h-24 md:w-52 md:-top-20 md:left-60;
+}
+
+#illustration2 {
+  @apply absolute md:-bottom-20 md:left-40 hidden md:block;
+}
+
+#illustration3 {
+  @apply absolute top-12 right-2 w-12 md:w-28 md:right-32 md:top-0;
+}
+
+#illustration4 {
+  @apply absolute w-28 right-4 -bottom-8 md:w-52 md:right-80 md:-bottom-6;
 }

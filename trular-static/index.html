@@ -22,6 +22,8 @@
   <link rel="stylesheet" href="./src/styles/layout.scss">
   <link rel="stylesheet" href="./src/styles/components.scss">
 
+  <link rel="stylesheet" href="./src/assets/fonts/platform.css">
+
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Roboto&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
 
@@ -61,22 +63,38 @@
     </div>
   </header>
 
-  <main class="l-main-content" role="main" id="mainContent">
+  <main class="l-main-content" role="main">
     <!-- hero -->
-    <section class="hero h-screen" role="banner" id="o-que-fazemos">
+    <section class="hero h-screen" role="banner">
+      <span id="illustration1">
+        <img src="./src/assets/images/illustration1.svg">
+      </span>
+
       <div class="container mx-auto px-4">
         <div class="hero__content">
+          <span id="illustration3">
+            <img src="./src/assets/images/illustration3.svg">
+          </span>
+
           <h1 class="hero__heading">Dados imobiliários confiáveis num só lugar</h1>
           <p class="hero__excerpt">Trular é a primeira plataforma com informações completas e confiáveis sobre prédios e
             corretores.</p>
 
           <div class="buttons flex-col mt-8">
-            <button type="button" class="button button--primary bg-accent">Peça seu código de
+            <button type="button" class="button button--primary">Peça seu código de
               acesso</button>
-            <!-- <a href="#" class="text-accent">Já tenho um código</a> -->
+            <a href="#" class="button button--secondary">Já tenho um código</a>
           </div>
+
+          <span id="illustration2">
+            <img src="./src/assets/images/illustration2.svg">
+          </span>
         </div>
       </div>
+
+      <span id="illustration4">
+        <img src="./src/assets/images/illustration4.svg">
+      </span>
     </section>
     <!-- end hero -->
 
@@ -84,8 +102,11 @@
     <section class="block h-screen">
       <div class="container mx-auto px-4">
         <div class="block__content">
-          <h1>Catálogo de prédios</h1>
-          <p>Encontre informações de todos os prédios residenciais da região central de São Paulo no nosso catálogo.</p>
+          <div class="block__texts">
+            <h1>Catálogo de prédios</h1>
+            <p>Encontre informações de todos os prédios residenciais da região central de São Paulo no nosso catálogo.
+            </p>
+          </div>
 
           <div class="images">
             <!-- <img src="/static/images/section-1.png" alt="Section 1 alt"> -->
@@ -201,6 +222,7 @@
   </footer>
 
   <script type="module" defer src="src/scripts/index.js"></script>
+
 </body>
 
 </html>
