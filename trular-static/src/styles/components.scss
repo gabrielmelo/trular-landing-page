@@ -1,26 +1,56 @@
-/*
-* Components
-*/
+/* Buttons */
+.buttons {
+  @apply flex space-y-2 md:space-y-4;
+}
 
-// Hero
+button,
+.button,
+a.button {
+  font-family: 'Open Sans', sans-serif;
+  @apply font-bold text-center text-sm py-2 px-6 rounded h-10 leading-normal md:text-base;
+  @apply transition duration-300 ease-in-out;
+
+  &--primary {
+    @apply text-white bg-primary;
+  }
+
+  &--secondary {
+    @apply text-primary;
+  }
+}
+
+/* Block */
+.block {
+  &__heading {
+    font-family: 'Platform';
+  }
+
+  &__excerpt {
+    color: #6b7278;
+  }
+}
+
+/* Hero */
 .hero {
   @apply text-center flex items-center justify-center relative;
-  background: url('../assets/images/hero-bg.png') no-repeat fixed bottom center;
+  background: url('/src/assets/images/hero-bg.png') no-repeat fixed bottom
+    center;
   background-size: cover;
 
   @screen md {
-    background: url('../assets/images/hero-desktop-bg.png') no-repeat fixed
+    background: url('/src/assets/images/hero-desktop-bg.png') no-repeat fixed
       bottom center;
     background-size: cover;
   }
 
   &__content {
-    @apply relative flex items-center flex-col pt-12;
+    @apply relative flex items-center flex-col flex-grow pt-12;
   }
 
   &__heading {
+    font-family: 'Platform', 'Inter', sans-serif;
+    max-width: 328px;
     @apply text-5xl text-center leading-tight;
-    font-family: 'Platform';
 
     @screen lg {
       @apply text-7xl;
@@ -39,57 +69,17 @@
   }
 }
 
-// Navigation
-.navigation {
-  @apply px-10 max-w-4xl;
-
-  @screen md {
-    @apply text-base text-gray-900 justify-between items-center;
-  }
-}
-
-// Buttons
-.buttons {
-  @apply flex space-y-2 md:space-y-4;
-}
-
-button,
-.button,
-a.button {
-  @apply font-bold text-center text-sm py-2 px-6 rounded h-10 leading-normal md:text-base;
-  font-family: 'Open Sans', sans-serif;
-
-  transition: filter 300ms ease-in-out;
-
-  &:hover {
-    filter: brightness(0.9);
-  }
-
-  &--primary {
-    @apply text-white bg-red-500;
-  }
-
-  &--secondary {
-    @apply text-red-500;
-  }
-}
-
-// Block
-.block {
-  @apply h-screen;
-  scroll-snap-align: start;
-}
-
+/* Illustrations */
 #illustration1 {
   @apply absolute -left-10 top-20 w-24 h-24 md:w-52 md:-top-20 md:left-60;
 }
 
 #illustration2 {
-  @apply absolute md:-bottom-20 md:left-40 hidden md:block;
+  @apply absolute md:-bottom-20 md:left-0 hidden md:block;
 }
 
 #illustration3 {
-  @apply absolute top-12 right-2 w-12 md:w-28 md:right-32 md:top-0;
+  @apply absolute top-12 right-2 w-12 md:w-28 md:right-0 md:top-0;
 }
 
 #illustration4 {

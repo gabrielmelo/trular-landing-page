@@ -1,7 +1,4 @@
-/*
-* Layout
-*/
-
+/* Layout */
 .l-header {
   @apply absolute top-0 z-30 w-full;
   height: var(--headerHeight);
@@ -15,6 +12,7 @@
   }
 }
 
+/* Main Content */
 .l-main-content {
   @apply relative top-0 z-10 h-screen;
 }
