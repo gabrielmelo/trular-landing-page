@@ -1,11 +1,12 @@
 module.exports = {
-  purge: [],
+  purge: ['/index.html', './src/styles/**/*.scss'],
   darkMode: false, // or 'media' or 'class'
   theme: {
     screens: {
       sm: '640px',
       md: '768px',
       lg: '1440px',
+      xl: '1550px',
     },
     extend: {
       colors: {
