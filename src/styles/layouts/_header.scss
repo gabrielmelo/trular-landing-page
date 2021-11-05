@@ -1,0 +1,12 @@
+.l-header {
+  @apply absolute top-0 z-10 w-full bg-transparent;
+  height: 80px;
+
+  &__container {
+    @apply flex justify-between items-center px-4 pt-6 pb-4 lg:pt-4;
+
+    @screen md {
+      @apply px-10 bg-transparent;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.l-footer {
+  @apply font-sans;
+  background-color: #4d5257;
+  height: 640px;
+
+  &__content {
+    @apply py-14 px-4 lg:py-24 lg:px-0 flex flex-col lg:flex-row justify-between h-screen lg:h-auto;
+  }
+
+  @screen lg {
+    height: 340px;
+  }
+
+  &__brand {
+    img {
+      width: 138px;
+    }
+  }
+
+  &__brand-description {
+    @apply text-white text-base mt-4 w-48 font-semibold lg:mt-8;
+  }
+
+  .logo-footer {
+    width: 138px;
+  }
+}

@@ -1,26 +1,3 @@
-/* Layout */
-.l-header {
-  @apply absolute top-0 z-10 w-full bg-transparent;
-  height: 80px;
-
-  &__container {
-    @apply flex justify-between items-center px-4 pt-6 pb-4 lg:pt-4;
-
-    @screen md {
-      @apply px-10 bg-transparent;
-    }
-  }
-}
-
-/* Main Content */
-.l-main-content {
-  @apply relative top-0 z-10;
-}
-
-.l-footer {
-  background-color: #4d5257;
-
-  &__content {
-    @apply py-14 px-4 lg:py-24 lg:px-0 flex flex-col lg:flex-row justify-between h-screen lg:h-auto;
-  }
-}
+@import './layouts/header';
+@import './layouts/main';
+@import './layouts/footer';
