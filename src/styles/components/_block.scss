@@ -45,7 +45,7 @@
     @apply relative mt-2 bg-cover lg:mt-0 lg:mr-0 lg:ml-0 lg:bg-contain bg-no-repeat;
     background-image: url('/src/assets/images/block-catalog-bg-sm.png');
 
-    height: 412px;
+    height: 420px;
     width: 340px;
 
     @screen lg {
@@ -70,7 +70,7 @@
 
   #building-card2 {
     @apply absolute right-12 z-20;
-    bottom: -5.5rem;
+    bottom: -5.4rem;
     width: 156px;
 
     @screen lg {
@@ -86,13 +86,14 @@
     height: 24px;
     width: 24px;
 
-    @apply absolute -bottom-3 left-10 bg-primary rounded-full;
+    @apply absolute -bottom-3 bg-primary rounded-full;
+    left: calc(50% - 140px);
   }
 
   @screen lg {
     &::after {
       bottom: -33px;
-      left: 460px;
+      left: calc(50% - 360px);
 
       height: 60px;
       width: 60px;
@@ -254,11 +255,12 @@
 .block--infos {
   @apply bg-primary pt-32 lg:pt-20 bg-cover bg-no-repeat;
   background-image: url(/src/assets/images/block-info-image.svg);
-  background-position: center center;
+  background-position: 0 0;
 
   height: 614px;
 
   @screen lg {
+    background-image: none;
     height: 900px;
   }
 
@@ -292,11 +294,16 @@
 
 /* Box info */
 .box-info {
-  @apply px-10 py-6 bg-blue-50 rounded-lg lg:w-80;
+  @apply px-10 py-6 bg-blue-50 rounded-lg;
+  max-width: 480px;
 
   &__heading {
     @apply text-2xl mb-4;
     font-family: 'Platform';
+  }
+
+  @screen lg {
+    max-width: 316px;
   }
 }
 

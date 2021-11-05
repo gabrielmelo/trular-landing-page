@@ -9,29 +9,40 @@
   },
   "scripts": {
     "cleanup": "rm -rf .parcel-cache dist",
-    "dev": "parcel --open",
-    "build": "yarn cleanup && parcel build",
+    "dev": "parcel --open --no-cache --log-level warn",
+    "build": "parcel build --public-url /public --no-source-maps",
     "release": "standard-version"
   },
+  "parcel-plugin-structurize": {
+    "rules": [
+      {
+        "match": "*.js",
+        "folder": "scripts"
+      },
+      {
+        "match": "*.{jpg,png,gif,svg}",
+        "folder": "images"
+      }
+    ]
+  },
   "devDependencies": {
+    "@parcel/transformer-image": "2.0.0-rc.0",
     "@parcel/transformer-sass": "^2.0.0",
-    "autoprefixer": "^10.3.1",
+    "autoprefixer": "^10.4.0",
+    "cssnano": "^5.0.9",
     "cz-conventional-changelog": "3.3.0",
     "parcel": "^2.0.0",
-    "postcss": "^8.3.6",
+    "parcel-plugin-structurize": "^2.4.4",
+    "postcss": "^8.3.11",
+    "postcss-import": "^14.0.2",
     "posthtml-include": "^1.7.2",
     "standard-version": "^9.3.1",
-    "tailwindcss": "^2.2.7"
+    "tailwindcss": "^2.2.19"
   },
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
   },
-  "license": "MIT",
-  "dependencies": {
-    "locomotive-scroll": "^4.1.3",
-    "rellax": "^1.12.1",
-    "simple-parallax-js": "^5.6.2"
-  }
+  "license": "MIT"
 }
