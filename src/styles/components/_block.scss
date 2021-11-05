@@ -146,8 +146,8 @@
     @screen lg {
       width: 578px;
 
-      top: -2rem;
-      left: -12px;
+      top: -31px;
+      left: 21px;
     }
   }
 
@@ -276,15 +276,16 @@
   }
 
   .block__image {
+    @apply bg-no-repeat bg-cover;
+    
     @screen lg {
-      width: 1170px;
-      height: 564px;
       background-image: url('/src/assets/images/block-info-image-lg.svg');
-      background-repeat: no-repeat;
-      background-size: cover;
+      
+      @apply absolute;
+      bottom: 150px;
 
-      position: absolute;
-      bottom: 30px;
+      height: 564px;
+      width: 1170px;
     }
   }
 }

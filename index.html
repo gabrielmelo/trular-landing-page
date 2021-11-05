@@ -29,7 +29,7 @@
 
 
 <body>
-  <div class="l-main-content">
+  <div class="l-main-content" data-scroll-container>
     <include src="./src/components/hero.html"></include>
     <include src="./src/components/block-catalog.html"></include>
     <include src="./src/components/block-details.html"></include>
@@ -38,5 +38,14 @@
     <include src="./src/components/footer.html"></include>
   </div>
 </body>
+<script src="./src/scripts/rellax.min.js"></script>
+<script src="./src/scripts/index.js" type="module"></script>
+<script>
+  var rellax = new Rellax('.horizontal', {
+    horizontal: true,
+    breakpoints: [320, 768, 1200]
+  });
+  rellax.refresh();
+</script>
 
 </html>
