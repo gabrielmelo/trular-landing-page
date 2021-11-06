@@ -1,5 +1,8 @@
-# trular static
+# trular
+Landing page trular build with Parceljs and Tailwindcss.
 
+
+![image](/screenshots.jpeg)
 
 ## Build with
 - [Parceljs](https://parceljs.org/)

@@ -1,0 +1,1 @@
+var rellaxVertical=new Rellax(".vertical");

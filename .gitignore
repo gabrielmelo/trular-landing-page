@@ -1,6 +1,4 @@
 node_modules
-dist
 
 # Parcel related files
-dist/
 .parcel-cache/
