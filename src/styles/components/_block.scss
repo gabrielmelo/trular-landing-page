@@ -140,9 +140,9 @@
 
   #details-card1 {
     @apply absolute z-30;
-    top: 0;
-    width: 260px;
-    left: 0px;
+    top: 0px;
+    width: 270px;
+    left: 46px;
 
     @screen lg {
       width: 578px;
@@ -164,9 +164,9 @@
   }
 
   #details-card3 {
-    @apply absolute top-0 left-52 z-10;
+    @apply absolute top-0 left-40 z-10;
     width: 156px;
-
+    
     @screen lg {
       left: 27rem;
       width: 316px;
@@ -175,7 +175,7 @@
 
   #details-price1 {
     @apply absolute -bottom-6 lg:bottom-0;
-    right: 46px;
+    right: 52px;
     width: 84px;
 
     @screen lg {
@@ -289,32 +289,5 @@
       height: 564px;
       width: 1170px;
     }
-  }
-}
-
-/* Box info */
-.box-info {
-  @apply px-10 py-6 bg-blue-50 rounded-lg;
-  max-width: 480px;
-
-  &__heading {
-    @apply text-2xl mb-4;
-    font-family: 'Platform';
-  }
-
-  @screen lg {
-    max-width: 316px;
-  }
-}
-
-.box-info--secondary {
-  @apply px-0 py-0 rounded-none bg-transparent;
-
-  @screen lg {
-    width: 436px;
-  }
-
-  .box-info__heading {
-    @apply lg:text-2xl text-white;
   }
 }

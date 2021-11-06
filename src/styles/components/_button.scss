@@ -1,19 +1,21 @@
-.buttons {
-  @apply flex space-y-2 md:space-y-4;
-}
-
-button,
-.button,
-a.button {
-  font-family: 'Open Sans', sans-serif;
-  @apply font-bold text-center text-sm py-2 px-11 rounded leading-normal h-10 lg:h-12 lg:text-base;
-  @apply transition duration-300 ease-in-out;
-
-  &--primary {
-    @apply text-white bg-primary;
+@layer components {
+  .buttons {
+    @apply flex space-y-2 md:space-y-4;
   }
 
-  &--secondary {
-    @apply text-primary;
+  button,
+  .button,
+  a.button {
+    font-family: 'Open Sans', sans-serif;
+    @apply font-bold text-center text-sm py-2 px-11 rounded leading-normal h-10 lg:h-12 lg:text-base;
+    @apply transition duration-300 ease-in-out;
+
+    &--primary {
+      @apply text-white bg-primary;
+    }
+
+    &--secondary {
+      @apply text-primary;
+    }
   }
 }

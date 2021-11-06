@@ -1,0 +1,16 @@
+@layer components {
+  .container {
+    height: 100%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+    max-width: 360px;
+    
+    @apply px-4 lg:px-0;
+
+    @screen lg {
+      max-width: 1105px;
+    }
+  }
+}

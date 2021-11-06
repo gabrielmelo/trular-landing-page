@@ -1,4 +1,4 @@
 
 
 /* Rellax */
-const rellax = new Rellax('.rellax');
+const rellaxVertical = new Rellax('.vertical');

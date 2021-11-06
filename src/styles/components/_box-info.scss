@@ -1,0 +1,27 @@
+@layer components {
+  .box-info {
+    @apply px-10 py-6 bg-blue-50 rounded-lg;
+    max-width: 480px;
+
+    &__heading {
+      @apply text-2xl mb-4;
+      font-family: 'Platform';
+    }
+
+    @screen lg {
+      max-width: 316px;
+    }
+  }
+
+  .box-info--secondary {
+    @apply px-0 py-0 rounded-none bg-transparent;
+
+    @screen lg {
+      width: 436px;
+    }
+
+    .box-info__heading {
+      @apply lg:text-2xl text-white;
+    }
+  }
+}

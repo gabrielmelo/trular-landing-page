@@ -1,5 +1,5 @@
 module.exports = {
-  purge: ['/index.html', './src/styles/**/*.css'],
+  purge: ['./src/**/index.html', './src/styles/**/*.css'],
   darkMode: false, // or 'media' or 'class'
   theme: {
     screens: {

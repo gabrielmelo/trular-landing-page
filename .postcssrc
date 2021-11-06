@@ -1,9 +1,10 @@
 {
   "plugins": {
-    "postcss-import": {},
-    "tailwindcss/nesting": {},
-    "tailwindcss": {},
     "autoprefixer": {},
-    "cssnano": {}
+    "postcss-import": true,
+    "posthtml-include": {},
+    "postcss-custom-properties": true,
+    "postcss-url": true, 
+    "tailwindcss": {},
   }
 }
