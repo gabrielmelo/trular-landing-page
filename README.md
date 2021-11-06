@@ -2,11 +2,14 @@
 
 
 ## Build with
-- [Babel](https://babeljs.io/)
-- [Parcel](https://parceljs.org/)
+- [Parceljs](https://parceljs.org/)
+- [Tailwindcss](tailwindcss.com/)
+- [PostCSS](https://postcss.org/)
 - [Sass](https://sass-lang.com/)
 - [Standard-version](https://github.com/conventional-changelog/standard-version)
-- [Tailwindcss](tailwindcss.com/)
+- [rellaxjs](https://dixonandmoe.com/rellax/)
+- [commitizen](https://github.com/commitizen/cz-cli)
+- [standard release](https://github.com/conventional-changelog/standard-version)
 
 ## Getting Started
 
@@ -15,17 +18,34 @@
 - [Yarn](https://yarnpkg.com/)
   
 ### Installation
-1. Clone the repro
+Clone the repro
 ```shell
-git clone 
+git clone git@bitbucket.org:sala7design/trular.git
 ```
 
-2. Install packages
+Install dependences
 ```shell
 yarn install
 ```
 
-3. To run in development mode
+To run in development mode
 ```shell
 yarn start
+```
+
+### Production
+To run in production mode
+```shell
+yarn build
+```
+
+### Version
+Create path
+```shell
+yarn release
+```
+
+Create minor
+```shell
+yarn release:minor
 ```
