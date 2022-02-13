@@ -1,5 +1,5 @@
 # trular
-Landing page trular build with Parceljs and Tailwindcss.
+trular landing page build with Parceljs and Tailwindcss.
 
 
 ![image](/screenshots.jpeg)
@@ -23,8 +23,11 @@ Landing page trular build with Parceljs and Tailwindcss.
 ### Installation
 Clone the repro
 ```shell
-git clone git@bitbucket.org:sala7design/trular.git
+git clone git@github.com:gabrielmelo/trular-landing-page.git
 ```
+or 
+
+[Download](https://github.com/gabrielmelo/trular-landing-page/archive/refs/heads/master.zip)
 
 Install dependences
 ```shell
