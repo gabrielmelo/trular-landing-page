@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.0.0](https://bitbucket.org/sala7design/trular/compare/v0.2.3...v1.0.0) (2022-02-13)
+
 ### [0.2.3](https://bitbucket.org/sala7design/trular/compare/v0.2.2...v0.2.3) (2021-11-06)
 
 ### 0.2.2 (2021-11-06)
