@@ -1,5 +1,5 @@
 # trular
-trular landing page build with Parceljs and Tailwindcss.
+Trular landing page build with Parceljs and Tailwindcss.
 
 
 ![image](/screenshots.jpeg)
